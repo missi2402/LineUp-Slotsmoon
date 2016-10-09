@@ -23,6 +23,7 @@
 header {
     background-image: url('../img/sign-in-up-background.png');
     background-repeat: no-repeat;
+    background-size: cover;
     .top-menu-header {
         text-align: center;
         padding: 15px 0;
@@ -77,6 +78,58 @@ header {
 main {
     background-image: url('../img/background-main.png');
     background-repeat: no-repeat;
+    background-size: cover;
+    .block-top-winners {
+    	margin: 20px 0px;
+    	display: flex;
+    	background: #000;
+    	border: 1px solid #fff;
+    }
+    .top-winners {
+    	text-align: center;
+	    padding-top: 20px;
+	    margin-left: -15px;
+        height: 120px;
+        width: 120px;
+        color: #141515;
+        font-size: 25px;
+        margin-right: 100px;
+        font-family: helvetica-roman;
+        background-image: linear-gradient(to bottom, #f3f0a0 0%, #efe93e 100%);
+        &:after {
+            content: "";
+            margin-left: 3px;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-left: 60px solid #f1e469;
+            position: absolute;
+            top: 0;
+        }
+    }
+    .item-winner {
+    	color: white;
+        font-family: helvetica-roman;
+    	img {
+    		max-width: 180px;
+    		padding: 13px 20px;
+
+    	}
+    	div {
+    		float: right;
+    		padding: 13px 0px;
+    	}
+    	.title {
+    		padding-top: 13px;
+        	font-size: 16.67px;
+    	}
+    	.name {
+    		font-size: 14.58px;
+    	}
+    	.price {
+    		color: #0062f5;
+    		font-size: 20.83px;
+    	}
+    }
     .logo-nav-banner {
         text-align: center;
         img {
@@ -87,7 +140,7 @@ main {
             }
             &.banner {
                 position: relative;
-                top: -190px;
+                top: -133px;
             }
         }
         button {
@@ -96,16 +149,20 @@ main {
             border: none;
             width: 116px;
             width: 110px;
-		    height: 40px;
-		    margin: 46px 8px;
+            height: 40px;
+            margin: 46px 8px;
             font-family: open-sans;
             background-image: url('../img/banner-button.png');
             background-repeat: no-repeat;
             background-size: cover;
         }
+        button:hover {
+        	color: #f0ea4d;
+        }
     }
     .opacity-background {
         background-color: rgba(0, 0, 0, 0.72);
+        margin-top: -100px;
     }
     .game-item {
         img {
@@ -118,6 +175,7 @@ main {
             color: #fff;
             font-size: 16.67px;
             font-family: helvetica-roman;
+            margin-bottom: 45px;
         }
     }
 }

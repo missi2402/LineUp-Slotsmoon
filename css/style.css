@@ -13,7 +13,8 @@
   src: url("../fonts/HelveticaNeueLTStd-Roman.otf"); }
 header {
   background-image: url("../img/sign-in-up-background.png");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
   header .top-menu-header {
     text-align: center;
     padding: 15px 0;
@@ -59,7 +60,49 @@ header {
 
 main {
   background-image: url("../img/background-main.png");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
+  main .block-top-winners {
+    margin: 20px 0px;
+    display: flex;
+    background: #000;
+    border: 1px solid #fff; }
+  main .top-winners {
+    text-align: center;
+    padding-top: 20px;
+    margin-left: -15px;
+    height: 120px;
+    width: 120px;
+    color: #141515;
+    font-size: 25px;
+    margin-right: 100px;
+    font-family: helvetica-roman;
+    background-image: linear-gradient(to bottom, #f3f0a0 0%, #efe93e 100%); }
+    main .top-winners:after {
+      content: "";
+      margin-left: 3px;
+      border-top: 60px solid transparent;
+      border-bottom: 60px solid transparent;
+      border-left: 60px solid #f1e469;
+      position: absolute;
+      top: 0; }
+  main .item-winner {
+    color: white;
+    font-family: helvetica-roman; }
+    main .item-winner img {
+      max-width: 180px;
+      padding: 13px 20px; }
+    main .item-winner div {
+      float: right;
+      padding: 13px 0px; }
+    main .item-winner .title {
+      padding-top: 13px;
+      font-size: 16.67px; }
+    main .item-winner .name {
+      font-size: 14.58px; }
+    main .item-winner .price {
+      color: #0062f5;
+      font-size: 20.83px; }
   main .logo-nav-banner {
     text-align: center; }
     main .logo-nav-banner img {
@@ -69,7 +112,7 @@ main {
         width: 26%; }
       main .logo-nav-banner img.banner {
         position: relative;
-        top: -190px; }
+        top: -133px; }
     main .logo-nav-banner button {
       color: #2f2f2f;
       font-size: 16px;
@@ -82,8 +125,11 @@ main {
       background-image: url("../img/banner-button.png");
       background-repeat: no-repeat;
       background-size: cover; }
+    main .logo-nav-banner button:hover {
+      color: #f0ea4d; }
   main .opacity-background {
-    background-color: rgba(0, 0, 0, 0.72); }
+    background-color: rgba(0, 0, 0, 0.72);
+    margin-top: -100px; }
   main .game-item img {
     max-width: 100%;
     border: 2px solid #363434;
@@ -92,7 +138,8 @@ main {
     text-align: center;
     color: #fff;
     font-size: 16.67px;
-    font-family: helvetica-roman; }
+    font-family: helvetica-roman;
+    margin-bottom: 45px; }
 
 footer {
   padding-top: 50px;
