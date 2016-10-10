@@ -1,0 +1,25 @@
+@media (max-width: 992px) {
+    main .logo-nav-banner button {
+        width: 40%;
+        margin: 30px 8px;
+    }
+    main .logo-nav-banner img.logo {
+        width: 60%;
+    }
+    footer {
+        padding-top: 0px;
+        text-align: center;
+    }
+    .menu-footer {
+    	boreder: none;
+    }
+    .menu-footer li {
+        display: inline-block;
+        margin: 30px;
+        padding: 0;
+        white-space: nowrap;
+    }
+    .providers {
+        padding-left: 0px;
+    }
+}
