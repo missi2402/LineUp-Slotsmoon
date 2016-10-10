@@ -1,16 +1,17 @@
-@media (max-width: 1200px) {	
+@media (max-width: 1200px) {
     main .main-menu .tab-content ul li {
         display: inline-block;
         margin-bottom: 10px;
         width: auto;
     }
     header ul.nav li:last-of-type {
-    	float: none
+        float: none
     }
     main .item-winner:nth-of-type(2) {
-    	display: none;
+        display: none;
     }
 }
+
 @media (max-width: 992px) {
     .navbar-toggle .icon-bar {
         background: #fff;
@@ -53,27 +54,92 @@
         padding-left: 0px;
     }
     main .item-winner:last-of-type {
-    	display: none;
+        display: none !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .hidden-for-lg {
+        display: none !important;
     }
 }
 
 @media (max-width: 769px) {
+    .hidden-for-sm {
+        display: none;
+    }
+    .navbar-header {
+        text-align: center;
+    }
+    .navbar-header span {
+        margin-left: 0px;
+    }
+    .navbar-toggle {
+        max-width: 50px;
+    }
+    .navbar-header .logo {
+        max-height: 50px;
+    }
     header .sign-up {
         position: relative;
         left: 0;
-        top: -25px;
+        top: 0;
     }
     header .sign-in {
-        margin: 20px;
-        padding: 10px 50px;
-    }
-    header input {
-        margin-left: 0;
-        padding: 5px 150px 10px 20px;
+        margin: 10px 20px;
+        float: left;
     }
     header a,
     header a:hover {
         font-size: 20px;
         margin-bottom: 20px;
+    }
+    main .logo-nav-banner .chain {
+        display: block;
+        top: -25%;
+        right: 15%;
+    }
+    main .logo-nav-banner .chain:first-of-type {
+        left: 25%;
+    }
+    main .logo-nav-banner img {
+        margin-top: 12%;
+    }
+    #bs-example-navbar-collapse-1 > ul > li > button {
+        color: #2f2f2f;
+        font-size: 16px;
+        border: none;
+        width: 50%;
+        height: 40px;
+        margin: 1% 8px;
+        background-image: url('../img/banner-button.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    main .main-menu .arrow-up {
+        left: 47%;
+    }
+    main .main-menu .tab-content ul {
+        text-align: center;
+    }
+    main .main-menu .tab-content ul li:nth-of-type(2) {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    main .top-winners {
+        margin-top: 50px;
+        height: 120px;
+        width: 40%;
+    }
+    main .item-winner {
+        text-align: center;
+        margin-right: 0;
+        position: relative;
+        right: -60px;
+    }
+    main .item-winner div {
+        float: none;
     }
 }
