@@ -1,17 +1,47 @@
+@media (max-width: 1200px) {	
+    main .main-menu .tab-content ul li {
+        display: inline-block;
+        margin-bottom: 10px;
+        width: auto;
+    }
+    header ul.nav li:last-of-type {
+    	float: none
+    }
+    main .item-winner:nth-of-type(2) {
+    	display: none;
+    }
+}
 @media (max-width: 992px) {
+    .navbar-toggle .icon-bar {
+        background: #fff;
+    }
+    .navbar-nav>li {
+        margin-bottom: 10px;
+    }
+    header .top-menu-header {
+        max-height: none;
+        overflow: hidden;
+    }
     main .logo-nav-banner button {
         width: 40%;
         margin: 30px 8px;
     }
     main .logo-nav-banner img.logo {
         width: 60%;
+        margin: -25px 0;
+    }
+    main .logo-nav-banner .chain {
+        display: none;
     }
     footer {
         padding-top: 0px;
         text-align: center;
     }
-    .menu-footer {
-    	boreder: none;
+    footer .menu-footer {
+        border-right-width: 0;
+    }
+    footer .providers h3:last-of-type {
+        margin-top: 65px;
     }
     .menu-footer li {
         display: inline-block;
@@ -21,5 +51,29 @@
     }
     .providers {
         padding-left: 0px;
+    }
+    main .item-winner:last-of-type {
+    	display: none;
+    }
+}
+
+@media (max-width: 769px) {
+    header .sign-up {
+        position: relative;
+        left: 0;
+        top: -25px;
+    }
+    header .sign-in {
+        margin: 20px;
+        padding: 10px 50px;
+    }
+    header input {
+        margin-left: 0;
+        padding: 5px 150px 10px 20px;
+    }
+    header a,
+    header a:hover {
+        font-size: 20px;
+        margin-bottom: 20px;
     }
 }
