@@ -35,7 +35,7 @@
         display: none;
     }
     footer {
-        padding-top: 0px;
+        padding-top: 20px;
         text-align: center;
     }
     footer .menu-footer {
@@ -124,6 +124,7 @@
     }
     main .main-menu .tab-content ul li:nth-of-type(2) {
         width: 90%;
+        margin-left: 5px;
     }
 }
 
@@ -131,13 +132,11 @@
     main .top-winners {
         margin-top: 50px;
         height: 120px;
-        width: 40%;
     }
     main .item-winner {
         text-align: center;
         margin-right: 0;
         position: relative;
-        right: -60px;
     }
     main .item-winner div {
         float: none;

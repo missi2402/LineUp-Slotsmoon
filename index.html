@@ -8,7 +8,7 @@
     <meta name="author" content="Antoniuk">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/media-style.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
 </head>
 
@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row">
                 <div class="navbar-header">
-                	<button class="sign-in text-uppercase hidden-for-lg">Sign in</button>
+                    <button class="sign-in text-uppercase hidden-for-lg">Sign in</button>
                     <a href="#" class="hidden-for-lg"><img class="logo" src="img/Slotsmoon-logo.png" alt="Slotsmoon"></a>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
@@ -27,38 +27,56 @@
                     </button>
                 </div>
                 <div class="top-menu-header col-lg-12 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                	<li class="hidden-for-lg"><button class="buttons-sm-menu text-uppercase">Casino</button></li>
-                    <li class="hidden-for-lg"><button class="buttons-sm-menu text-uppercase">Promotion</button></li>
-                    <li class="hidden-for-lg"><button class="buttons-sm-menu text-uppercase">Vip</button></li>
-                    <li class="hidden-for-lg"><button class="buttons-sm-menu text-uppercase">Support</button></li>
-                    <li><button class="text-uppercase sign-up">Sign up</button></li>
-                    <li><span class="text-uppercase hidden-for-sm">Login:</span></li>
-                    <li><input type="text" class="hidden-for-sm" placeholder="Username" required></li>
-                    <li><input type="password" class="hidden-for-sm" placeholder="Password" required></li>
-                    <li><button class="sign-in text-uppercase hidden-for-sm">Sign in</button></li>
-                    <li><a href="#">Forgot password?</a></li>
-                    <li><div class="dropdown">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            <img src="img/ukr.png" alt="">
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li>
-                                <a href="#"><img src="img/ukr.png" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/ukr.png" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/ukr.png" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/ukr.png" alt=""></a>
-                            </li>
-                        </ul>
-                    </div></li>
-                 </ul>
+                    <ul class="nav navbar-nav">
+                        <li class="hidden-for-lg">
+                            <button class="buttons-sm-menu text-uppercase">Casino</button>
+                        </li>
+                        <li class="hidden-for-lg">
+                            <button class="buttons-sm-menu text-uppercase">Promotion</button>
+                        </li>
+                        <li class="hidden-for-lg">
+                            <button class="buttons-sm-menu text-uppercase">Vip</button>
+                        </li>
+                        <li class="hidden-for-lg">
+                            <button class="buttons-sm-menu text-uppercase">Support</button>
+                        </li>
+                        <li>
+                            <button class="text-uppercase sign-up">Sign up</button>
+                        </li>
+                        <li><span class="text-uppercase hidden-for-sm">Login:</span></li>
+                        <li>
+                            <input type="text" class="hidden-for-sm" placeholder="Username" required>
+                        </li>
+                        <li>
+                            <input type="password" class="hidden-for-sm" placeholder="Password" required>
+                        </li>
+                        <li>
+                            <button class="sign-in text-uppercase hidden-for-sm">Sign in</button>
+                        </li>
+                        <li><a href="#">Forgot password?</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <img src="img/ukr.png" alt="">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li>
+                                        <a href="#"><img src="img/ukr.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/ukr.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/ukr.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/ukr.png" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -82,7 +100,7 @@
         </section>
         <div class="container opacity-background">
             <div class="row">
-                <div class="col-lg-12 block-top-winners">
+                <div class="col-lg-12 block-top-winners hidden-xs">
                     <div class="text-uppercase top-winners"><span>top<br />winners</span></div>
                     <div class="item-winner">
                         <img src="img/game-winner-1.png" alt="Winner">
@@ -115,7 +133,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12 main-menu">
+                <div class="col-lg-12 main-menu hidden-for-sm">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs nav-justified text-uppercase" role="tablist">
                         <li role="presentation"><a href="#all-games" class="active" aria-controls="all-games" role="tab" data-toggle="tab">All Games</a></li>
@@ -165,55 +183,212 @@
                         <div role="tabpanel" class="tab-pane" id="table">.4.</div>
                     </div>
                 </div>
-                <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <img src="img/greedygoblins-topgraphic.png" alt="">
-                    <div class="title">Greedy Goblins</div>
-                </div>
-                <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <img src="img/greedygoblins-topgraphic.png" alt="">
-                    <div class="title">Greedy Goblins</div>
-                </div>
-                <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <img src="img/greedygoblins-topgraphic.png" alt="">
-                    <div class="title">Greedy Goblins</div>
-                </div>
-                <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <img src="img/greedygoblins-topgraphic.png" alt="">
-                    <div class="title">Greedy Goblins</div>
-                </div>
-                <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <img src="img/greedygoblins-topgraphic.png" alt="">
-                    <div class="title">Greedy Goblins</div>
-                </div>
-                <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <img src="img/greedygoblins-topgraphic.png" alt="">
-                    <div class="title">Greedy Goblins</div>
-                </div>
-                <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <img src="img/greedygoblins-topgraphic.png" alt="">
-                    <div class="title">Greedy Goblins</div>
-                </div>
-                <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <img src="img/greedygoblins-topgraphic.png" alt="">
-                    <div class="title">Greedy Goblins</div>
-                </div>
-                <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <img src="img/greedygoblins-topgraphic.png" alt="">
-                    <div class="title">Greedy Goblins</div>
-                </div>
-                <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <img src="img/greedygoblins-topgraphic.png" alt="">
-                    <div class="title">Greedy Goblins</div>
-                </div>
-                <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <img src="img/greedygoblins-topgraphic.png" alt="">
-                    <div class="title">Greedy Goblins</div>
-                </div>
-                <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                    <img src="img/greedygoblins-topgraphic.png" alt="">
-                    <div class="title">Greedy Goblins</div>
+                <div class="accordion hidden-for-lg col-lg-12" id="accordion2">
+                    <!-- group start -->
+                    <div class="panel">
+                        <div class="accordion-heading accord-title">
+                            <a class="accordion-toggle leftnav-primary text-uppercase" data-toggle="collapse" data-parent="#accordion2" href="#popular-games-sm">Popular games<span class="glyphicon glyphicon-chevron-down"></span></a>
+                        </div>
+                        <div id="popular-games-sm" class="accordion-body collapse in">
+                            <div class="container accordion-inner">
+                                <div class="game-item col-xs-6">
+                                    <img src="img/greedygoblins-topgraphic.png" alt="">
+                                    <div class="title">Greedy Goblins</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end group -->
+                    <!-- group start -->
+                    <div class="panel">
+                        <div class="accordion-heading accord-title">
+                            <a class="accordion-toggle text-uppercase" data-toggle="collapse" data-parent="#accordion2" href="#all-games-sm">
+                            All games
+                            <span class="glyphicon glyphicon-chevron-down"></span></a>
+                        </div>
+                        <div id="all-games-sm" class="accordion-body collapse">
+                            <div class=" container accordion-inner">
+                                <div class="arrow-up"></div>
+                                <ul class="nav-justified">
+                                    <li><a href="#1" class="text-uppercase">Table games</a></li>
+                                    <li>
+                                        <a href="#"><img src="img/sort1-net-ent.png" alt=""></a>
+                                        <a href="#"><img src="img/sort2.png" alt=""></a>
+                                        <a href="#"><img src="img/sort3.png" alt=""></a>
+                                        <a href="#"><img src="img/game2.png" alt=""></a>
+                                        <a href="#"><img src="img/game3.png" alt=""></a>
+                                        <select name="Providers">
+                                            <option value="az">Other providers </option>
+                                            <option value="az">Other providers</option>
+                                            <option value="az">Other providers</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <a href="#3"><img src="img/reset-button.png" alt="reset"></a>
+                                    </li>
+                                    <li>
+                                        <select name="Sort">
+                                            <option value="az">Sort by </option>
+                                            <option value="az">Sort by </option>
+                                            <option value="az">Sort by </option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <input type="search" placeholder="Search">
+                                    </li>
+                                </ul>
+                                <div class="game-item col-xs-6">
+                                    <img src="img/greedygoblins-topgraphic.png" alt="">
+                                    <div class="title">Greedy Goblins</div>
+                                </div>
+                                <div class="game-item col-xs-6">
+                                    <img src="img/greedygoblins-topgraphic.png" alt="">
+                                    <div class="title">Greedy Goblins</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end group -->
+                    <!-- group start -->
+                    <div class="panel">
+                        <div class="accordion-heading accord-title">
+                            <a class="accordion-toggle leftnav-primary text-uppercase" data-toggle="collapse" data-parent="#accordion2" href="#new-games-sm">New games<span class="glyphicon glyphicon-chevron-down"></span></a>
+                        </div>
+                        <div id="new-games-sm" class="accordion-body collapse">
+                            <div class="container accordion-inner">
+                                <div class="game-item col-xs-6">
+                                    <img src="img/greedygoblins-topgraphic.png" alt="">
+                                    <div class="title">Greedy Goblins</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end group -->
+                    <!-- group start -->
+                    <div class="panel">
+                        <div class="accordion-heading accord-title">
+                            <a class="accordion-toggle text-uppercase" data-toggle="collapse" data-parent="#accordion2" href="#solts-sm">Solts <span class="glyphicon glyphicon-chevron-down"></span></a>
+                        </div>
+                        <div id="solts-sm" class="accordion-body collapse">
+                            <div class="container accordion-inner">
+                                <div class="game-item col-xs-6">
+                                    <img src="img/greedygoblins-topgraphic.png" alt="">
+                                    <div class="title">Greedy Goblins</div>
+                                </div>
+                                <div class="game-item col-xs-6">
+                                    <img src="img/greedygoblins-topgraphic.png" alt="">
+                                    <div class="title">Greedy Goblins</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end group -->
+                    <!-- group start -->
+                    <div class="panel">
+                        <div class="accordion-heading accord-title">
+                            <a class="accordion-toggle text-uppercase" data-toggle="collapse" data-parent="#accordion2" href="#table-sm">Table<span class="glyphicon glyphicon-chevron-down"></span></a>
+                        </div>
+                        <div id="table-sm" class="accordion-body collapse">
+                            <div class="container accordion-inner">
+                                <div class="game-item col-xs-6">
+                                    <img src="img/greedygoblins-topgraphic.png" alt="">
+                                    <div class="title">Greedy Goblins</div>
+                                </div>
+                                <div class="game-item col-xs-6">
+                                    <img src="img/greedygoblins-topgraphic.png" alt="">
+                                    <div class="title">Greedy Goblins</div>
+                                </div>
+                                <div class="game-item col-xs-6">
+                                    <img src="img/greedygoblins-topgraphic.png" alt="">
+                                    <div class="title">Greedy Goblins</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end group -->
+                    <!-- group start -->
+                    <div class="panel">
+                        <div class="accordion-heading accord-title">
+                            <a class="accordion-toggle text-uppercase" data-toggle="collapse" data-parent="#accordion2" href="#live-sm">Live<span class="glyphicon glyphicon-chevron-down"></span></a>
+                        </div>
+                        <div id="live-sm" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                Live content
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end group -->
+                    <!-- group start -->
+                    <div class="panel">
+                        <div class="accordion-heading accord-title">
+                            <a class="accordion-toggle text-uppercase" data-toggle="collapse" data-parent="#accordion2" href="#video-poker-sm">Video poker<span class="glyphicon glyphicon-chevron-down"></span></a>
+                        </div>
+                        <div id="video-poker-sm" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                Video poker content
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end group -->
+                    <!-- group start -->
+                    <div class="panel">
+                        <div class="accordion-heading accord-title">
+                            <a class="accordion-toggle  text-uppercase" data-toggle="collapse" data-parent="#accordion2" href="#other-sm">Other<span class="glyphicon glyphicon-chevron-down"></span></a>
+                        </div>
+                        <div id="other-sm" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                Other content
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end group -->
+                    <!-- group start -->
+                    <div class="panel">
+                        <div class="accordion-heading accord-title">
+                            <a class="accordion-toggle  text-uppercase" data-toggle="collapse" data-parent="#accordion2" href="#jackpots-sm">Jackpots<span class="glyphicon glyphicon-chevron-down"></span></a>
+                        </div>
+                        <div id="jackpots-sm" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                Jackpots content
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end group -->
                 </div>
             </div>
+            <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                <img src="img/greedygoblins-topgraphic.png" alt="">
+                <div class="title">Greedy Goblins</div>
+            </div>
+            <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                <img src="img/greedygoblins-topgraphic.png" alt="">
+                <div class="title">Greedy Goblins</div>
+            </div>
+            <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                <img src="img/greedygoblins-topgraphic.png" alt="">
+                <div class="title">Greedy Goblins</div>
+            </div>
+            <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                <img src="img/greedygoblins-topgraphic.png" alt="">
+                <div class="title">Greedy Goblins</div>
+            </div>
+            <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                <img src="img/greedygoblins-topgraphic.png" alt="">
+                <div class="title">Greedy Goblins</div>
+            </div>
+            <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                <img src="img/greedygoblins-topgraphic.png" alt="">
+                <div class="title">Greedy Goblins</div>
+            </div>
+            <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                <img src="img/greedygoblins-topgraphic.png" alt="">
+                <div class="title">Greedy Goblins</div>
+            </div>
+            <div class="game-item col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                <img src="img/greedygoblins-topgraphic.png" alt="">
+                <div class="title">Greedy Goblins</div>
+            </div>
+        </div>
         </div>
     </main>
     <footer>
@@ -261,5 +436,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="js/prefixfree.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+$(document).on("hide.bs.collapse show.bs.collapse", ".collapse", function (event) {
+    $(this).prev().find(".glyphicon").toggleClass("glyphicon-chevron-up glyphicon-chevron-down");
+    $(this).prev().find("span.pull-right.text-muted").toggleClass("expandir fechar");
+    event.stopPropagation();
+});
+</script>
 
 </html>
